@@ -1,0 +1,43 @@
+.ax{
+  width: 23rem;
+  height: 12rem;
+
+}
+.axe1{
+  width: 90%;
+height: 50%;
+}
+
+.ts{
+  font-size: 0.8rem;
+}
+.aport{
+  color: black;
+  /* text-align: center; */
+}
+body {
+  font-family: Georgia, serif;
+}
+#pas{
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 5rem;
+}
+.tt{
+  text-align: start;
+}
+
+/* @media screen and (max-width: 900px) and (min-width: 500px) {
+
+
+  .axe1 {
+     width: 13rem;
+    width: 24rem;
+  }
+
+  #pas {
+     font-size: 12rem;
+    font-size: 4rem;
+  }
+
+} */

@@ -1,0 +1,38 @@
+{% extends 'portfolio\base.html' %}
+
+{% block content %}
+
+
+    {% load static %}
+    <div class="jumbotron text-center">
+
+    <img class="axe1" src="{% static 'portfolio/pic5.jpg' %}" >
+    <h1>Its My First PortFolio</h1>
+
+    </div>
+
+    <p id="pas"><b>PortFolio</b></p>
+    <hr >
+
+    <div class="container" dir="rtl">
+      <div class="row">
+
+    {% for project in projects %}
+    <div class="col-sm-4" dir="rtl">
+
+    <img class="ax" src="{{ project.image.url }}">
+      <a href="{{ project.url }}"class="aport">
+    <h1>{{ project.titel }}</h1>
+    <p class="ts">{{ project.description }}</p>
+    <br>
+    {% if project.url %}
+    </a>
+    {% endif %}
+    </div>
+    {% endfor %}
+    </div>
+    </div>
+
+
+
+{% endblock %}

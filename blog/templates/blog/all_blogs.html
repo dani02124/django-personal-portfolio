@@ -1,0 +1,23 @@
+{% extends 'portfolio\base.html' %}
+
+{% block content %}
+<div dir="ltr" class="container text-center jumbotron ">
+
+
+<h1>Hello Its My Blog</h1>
+<h2>Dani Has {{ blog.count }} Page {{ blog.count | pluralize }}</h2>
+
+{% for bolgs in blog %}
+
+  <a  style="color:blue;" class="aport" href="{% url 'blog:detail'  bolgs.id %}">
+    <h3 class="tt">{{bolgs.titel}}</h3>
+  </a>
+  <p class="tt">{{bolgs.date | date:'Y m D'}}</p>
+
+  <p  class="tt">{{bolgs.description|truncatechars:100|safe}}<br></p>
+  <br><br>
+
+{% endfor %}
+
+{% endblock %}
+</div>
