@@ -15,10 +15,10 @@
     <hr >
 
     <div class="container" dir="rtl">
-      <div class="row">
+      <div class="row" id="rows1">
 
     {% for project in projects %}
-    <div class="col-sm-4" dir="rtl">
+    <div class="col-sm-4 " dir="rtl">
 
     <img class="ax" src="{{ project.image.url }}">
       <a href="{{ project.url }}"class="aport">
@@ -26,8 +26,9 @@
     <p class="ts">{{ project.description }}</p>
     <br>
     {% if project.url %}
-    </a>
+
     {% endif %}
+    </a>
     </div>
     {% endfor %}
     </div>

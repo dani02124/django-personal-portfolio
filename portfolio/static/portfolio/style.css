@@ -1,5 +1,5 @@
 .ax{
-  width: 23rem;
+  width: 22rem;
   height: 12rem;
 
 }
@@ -21,23 +21,37 @@ body {
 #pas{
   text-align: center;
   margin-top: 1rem;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .tt{
   text-align: start;
 }
 
-/* @media screen and (max-width: 900px) and (min-width: 500px) {
+@media screen and (max-width: 400px) {
 
 
   .axe1 {
-     width: 13rem;
-    width: 24rem;
+    width: 85%;
+   height: 50%;
   }
-
+  .ax {
+      width: 19rem;
+      height: 12rem;
+  }
   #pas {
-     font-size: 12rem;
-    font-size: 4rem;
+    font-weight: bolder;
+    font-size: 140%%;
   }
 
-} */
+}
+@media screen and (max-width: 1199px)and (min-width:575px) {
+
+
+  #rows1{
+    display: none;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+}
