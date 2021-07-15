@@ -1,4 +1,4 @@
-{% extends 'portfolio\base.html' %}
+{% extends 'portfolio/base.html' %}
 
 {% block content %}
 
@@ -15,7 +15,9 @@
     <hr >
 
     <div class="container" dir="rtl">
+
       <div class="row" id="rows1">
+      <div class="row"id="rows1">
 
     {% for project in projects %}
     <div class="col-sm-4 " dir="rtl">
@@ -25,6 +27,7 @@
     <h1>{{ project.titel }}</h1>
     <p class="ts">{{ project.description }}</p>
     <br>
+    <hr>
     {% if project.url %}
 
     {% endif %}
